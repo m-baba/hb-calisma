@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+ul, li , ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.is-hide {
+    display: none;
+}
+
+.container {
+    width: 285px;
+    margin: auto;
+}
+
+/*
+    Modal Pop Up
+*/
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: #000;
+    opacity: 0.5;
+}
+
+.popup-confirm {
+    .box-shadow(0px 0px 15px 0px);
+    .center();
+    width: 370px;
+    height: 185px;
+    z-index: 100;
+}
+
+.confirm-header {
+    width: 100%;
+    float: left;
+    height: 25px;
+    background: #333;
+}
+
+.confirm-title {
+    line-height: 25px;
+    font-size: 16px;
+    float: left;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.confirm-close {
+    float: right;
+}
+
+.confirm-close::after {
+    font-family:  @font-icomoon;
+    content: "\e908";
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.confirm-content {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: #d8d8d8;
+    padding-top: 30px;
+}
+
+.confirm-footer {
+    width: 100%;
+    float: left;
+    background: #d8d8d8;
+    padding: 30px 0;
+}
+
+.confirm-btn {
+    .border-radius(16px);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background: #333;
+    width: 115px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-confirm {
+    float: left;
+    margin-left: 10%;
+}
+
+.btn-cancel {
+    float: right;
+    margin-right: 10%;
+}
+
+/*
+    Modal Message
+*/
+.popup-message {
+    .box-shadow(0px 0px 15px 0px);
+    .border-radius(4px);
+    padding: 0;
+    background: #ddf9d3;
+    font-size: 14px;
+    color: #5aaf83;
+    width: 260px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15%;
+    border: 1px solid #3da420;
+}
+
+.popup-message p {
+    padding: 0;
+    text-align: center;
+}
